@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-sans: 'Inter', system-ui, sans-serif;
+  }
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: -0.05em;
+}
+
+/* Custom Minecraft-style borders and buttons */
+.pixel-corners {
+  box-shadow: 
+    0 -3px 0 0 #000,
+    0 3px 0 0 #000,
+    -3px 0 0 0 #000,
+    3px 0 0 0 #000;
+}
+
+.pixel-border-emerald {
+  border: 2px solid #10b981;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
+
+.mc-panel {
+  background: linear-gradient(180deg, #182234 0%, #0f1624 100%);
+  border: 2px solid #29384d;
+}
+
+.mc-button-primary {
+  background: linear-gradient(180deg, #10b981 0%, #059669 100%);
+  border-top: 2px solid #34d399;
+  border-left: 2px solid #34d399;
+  border-bottom: 3px solid #047857;
+  border-right: 3px solid #047857;
+  color: #042f2e;
+  font-weight: 700;
+  transition: all 0.1s ease;
+}
+
+.mc-button-primary:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.mc-button-primary:active {
+  transform: translateY(1px);
+  border-top: 3px solid #047857;
+  border-left: 3px solid #047857;
+  border-bottom: 2px solid #34d399;
+  border-right: 2px solid #34d399;
+}
+
+.mc-button-secondary {
+  background: linear-gradient(180deg, #253346 0%, #17212e 100%);
+  border-top: 2px solid #3b4e68;
+  border-left: 2px solid #3b4e68;
+  border-bottom: 3px solid #0f1622;
+  border-right: 3px solid #0f1622;
+  color: #e2e8f0;
+  transition: all 0.1s ease;
+}
+
+.mc-button-secondary:hover {
+  background: linear-gradient(180deg, #2f4058 0%, #1e2b3c 100%);
+  color: #ffffff;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b111e;
+}
+::-webkit-scrollbar-thumb {
+  background: #253346;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

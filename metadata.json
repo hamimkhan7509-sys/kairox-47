@@ -1,0 +1,6 @@
+{
+  "name": "mc-generator",
+  "description": "Free AI generator of add-on content for Minecraft Bedrock Edition (Pocket Edition on Android, iOS, Windows). Real installable .mcpack, .mcaddon, and .mcstructure files.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
